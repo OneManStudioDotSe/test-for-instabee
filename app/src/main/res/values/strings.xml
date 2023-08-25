@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- General -->
+    <string name="app_name">Instabee Android Code Test</string>
+
+    <!-- Routes -->
+    <string name="route_list_label">Route List</string>
+
+    <!-- Route -->
+    <string name="route_details_label">Route</string>
+
+</resources>

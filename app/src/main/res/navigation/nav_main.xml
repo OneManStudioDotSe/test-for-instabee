@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@+id/routeListFragment"
+    >
+
+    <fragment
+        android:id="@+id/routeListFragment"
+        android:name="io.instabee.codetest.ui.routelist.RouteListFragment"
+        android:label="@string/route_list_label"
+        >
+        <action
+            android:id="@+id/action_routeListFragment_to_routeDetailsFragment"
+            app:destination="@id/routeDetailsFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/routeDetailsFragment"
+        android:name="io.instabee.codetest.ui.route.RouteDetailsFragment"
+        android:label="@string/route_details_label"
+        >
+        <argument
+            android:name="routeId"
+            app:argType="string"
+            />
+    </fragment>
+</navigation>
