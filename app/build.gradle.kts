@@ -59,6 +59,7 @@ android {
         add("META-INF/AL2.0")
         add("META-INF/LGPL2.1")
     }
+    namespace = "io.instabee.codetest"
 }
 
 tasks.withType<KotlinJvmCompile>().configureEach {
