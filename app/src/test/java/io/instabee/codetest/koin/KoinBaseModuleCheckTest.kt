@@ -4,7 +4,7 @@ import io.instabee.codetest.BaseUnitTest
 import io.instabee.codetest.repository.RouteRepo
 import io.instabee.codetest.ui.route.RouteDetailsViewModel
 import org.junit.Assert.assertNotNull
-import org.junit.Test
+import org.junit.jupiter.api.Test
 import org.junit.experimental.categories.Category
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4

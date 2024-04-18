@@ -75,7 +75,7 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile>().configureEa
 dependencies {
     testImplementation("junit:junit:4.13.2")
 
-    val koinVersion = "3.3.3"
+    val koinVersion = "3.4.0"
     val coroutinesVersion = "1.8.0"
 
     val kotlinVersion = rootProject.extra["kotlinVersion"] as String
@@ -84,16 +84,16 @@ dependencies {
     val navigationVersion = rootProject.extra["navigationVersion"] as String
 
 // Architecture
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
-    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
+    implementation("androidx.core:core-ktx:1.13.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.activity:activity-ktx:1.8.2")
+    implementation("androidx.activity:activity-ktx:1.9.0")
     implementation("androidx.collection:collection-ktx:1.4.0")
     implementation("androidx.preference:preference-ktx:1.2.1")
     implementation("io.insert-koin:koin-android:${koinVersion}")
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:$kotlinVersion"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
 
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
@@ -104,14 +104,14 @@ dependencies {
     // UI
     implementation("androidx.compose.ui:ui:$composeVersion")
     implementation("androidx.compose.compiler:compiler:$composeCompilerVersion")
-    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.compose.animation:animation:$composeVersion")
     implementation("androidx.compose.material:material:$composeVersion")
     implementation("androidx.compose.material:material-icons-extended:$composeVersion")
     implementation("androidx.compose.foundation:foundation:$composeVersion")
     implementation("androidx.compose.ui:ui-tooling-preview:$composeVersion")
     implementation("androidx.compose.ui:ui-tooling:$composeVersion")
-    implementation("com.airbnb.android:lottie-compose:5.2.0")
+    implementation("com.airbnb.android:lottie-compose:6.4.0")
     implementation("me.onebone:toolbar-compose:2.3.5")
 
     implementation("androidx.fragment:fragment-ktx:1.6.2")
@@ -129,7 +129,7 @@ dependencies {
     // Instrumented testing
     androidTestImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("io.mockk:mockk-android:1.12.2")
+    androidTestImplementation("io.mockk:mockk-android:1.13.5")
     androidTestImplementation("io.insert-koin:koin-test:$koinVersion")
     androidTestImplementation("io.insert-koin:koin-test-junit4:$koinVersion")
     androidTestUtil("androidx.test:orchestrator:1.4.2")
@@ -147,8 +147,8 @@ dependencies {
     // Unit testing
     testImplementation("junit:junit:4.13.2")
     testImplementation("androidx.test:core:1.5.0")
-    testImplementation("io.mockk:mockk:1.12.2")
-    testImplementation("io.mockk:mockk-android:1.12.2")
+    testImplementation("io.mockk:mockk:1.13.5")
+    testImplementation("io.mockk:mockk-android:1.13.5")
     testImplementation("androidx.test.ext:junit:1.1.5")
     testImplementation("androidx.arch.core:core-testing:2.2.0")
     testImplementation("org.powermock:powermock-module-junit4:2.0.7")

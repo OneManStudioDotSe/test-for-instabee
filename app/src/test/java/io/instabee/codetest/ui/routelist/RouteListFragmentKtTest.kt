@@ -6,7 +6,7 @@ import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.minus
 import org.junit.Assert.*
 
-import org.junit.Test
+import org.junit.jupiter.api.Test
 import kotlin.time.Duration.Companion.days
 import kotlin.time.Duration.Companion.hours
 

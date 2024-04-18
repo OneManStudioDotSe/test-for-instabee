@@ -13,13 +13,13 @@ buildscript {
 
     val kotlinVersion by extra("1.9.22")
     val composeVersion by extra("1.5.0")
-    val composeCompilerVersion by extra("1.5.10")
+    val composeCompilerVersion by extra("1.5.12")
     val navigationVersion by extra("2.7.7")
 
     dependencies {
-        classpath("com.android.tools.build:gradle:8.3.0-rc02")
+        classpath("com.android.tools.build:gradle:8.3.2")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
-        classpath("org.jetbrains.kotlin:kotlin-serialization:1.9.22")
+        classpath("org.jetbrains.kotlin:kotlin-serialization:1.9.23")
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.7")
         classpath("com.github.ben-manes:gradle-versions-plugin:0.51.0")
     }
